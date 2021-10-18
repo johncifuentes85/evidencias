@@ -1,0 +1,44 @@
+
+Cordial Saludo.
+
+El archivo metodologias.sql es el scrip para la creación de la base de datos.
+
+
+La siguiente información es para la configuración del código
+guardar la carpeta crudUsuarios en la carpeta de tu servidor local
+si usas xampp es htdcos
+si usas wampp es www
+
+Recordar editar el archivo app.php
+que se encuentra en la carpeta app/Config
+modificarla y poner el puerto que estes usando en tu xampp o wampp
+
+**public $baseURL = 'http://localhost:8080/crudUsuarios';
+
+
+el nombre que le pongas a la base de datos se debe poner en el archivo 
+Database.php ubicado en la carpeta app/Config 
+
+ public $default = [
+        'DSN'      => '',
+        'hostname' => 'localhost',
+        'username' => 'root',
+        'password' => '',
+        'database' => 'metodologias',
+        'DBDriver' => 'MySQLi',
+        'DBPrefix' => '',
+        'pConnect' => false,
+        'DBDebug'  => (ENVIRONMENT !== 'production'),
+        'charset'  => 'utf8',
+        'DBCollat' => 'utf8_general_ci',
+        'swapPre'  => '',
+        'encrypt'  => false,
+        'compress' => false,
+        'strictOn' => false,
+        'failover' => [],
+        'port'     => 3306,
+    ];
+
+y para verificar que funcione correctamente, en el navegador
+en la URL escribes la base_url que hayas colocado por ejemplo : 
+http://localhost:8080/crudUsuarios
